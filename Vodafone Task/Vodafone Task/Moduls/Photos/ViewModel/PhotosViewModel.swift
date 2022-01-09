@@ -122,9 +122,9 @@ class PhotosViewModel {
 extension PhotosViewModel {
     // MARK: - PhotosData Func
     func saveModel(){
-        if let offmodel = self.model {
-        prefs.set(offmodel, forKey: UD.PrefKeys.offlinemodel)
-        }
+      //  if let offmodel = self.model {
+        // prefs.set(offmodel, forKey: UD.PrefKeys.offlinemodel)
+     //   }
     }
     func getCount() -> Int {
         if let count = model?.count{
