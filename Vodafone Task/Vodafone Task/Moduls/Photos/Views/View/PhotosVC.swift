@@ -50,6 +50,7 @@ class PhotosVC: UIViewController {
         self.viewModel.internetConnectionStatus = {
             print("Internet disconnected")
             // show UI Internet is disconnected
+            self.photoCollectionView.reloadData()
         }
 
         self.viewModel.serverErrorStatus = {
@@ -102,7 +103,8 @@ extension PhotosVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
               
         cell.Img.setImage(with: viewModel.getImageURL(index: indexPath.row))
                 cell.authorName.text = viewModel.getauthorName(index: indexPath.row)
-
+        cell.selectedBT.addTarget(self, action: #selector(selected(sender:)), for: .touchUpInside)
+        cell.selectedBT.tag = indexPath.row
                 self.index = self.index + 1
 
 //
@@ -125,17 +127,16 @@ extension PhotosVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
             return CGSize(width: (self.view.frame.width / 2) - 10, height: 200)
    //        }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-          
+    @objc func selected(sender: UIButton){
+        
         if let vc = UIStoryboard.init(name: "Photo", bundle: Bundle.main).instantiateViewController(withIdentifier: "ShowImageVC") as? ShowImageVC{
         vc.modalPresentationStyle = .fullScreen
-        vc.url = self.viewModel.getImageURL(index: indexPath.row)
+            vc.url = self.viewModel.getImageURL(index: sender.tag)
             self.present(vc, animated: true, completion: nil)
             
         }
-        
     }
+   
 
 
 

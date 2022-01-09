@@ -2,23 +2,27 @@ PODS:
   - Alamofire (5.4.3)
   - Kingfisher (6.3.1)
   - SVProgressHUD (2.2.5)
+  - UIImageColors (2.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
   - SVProgressHUD
+  - UIImageColors
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
     - SVProgressHUD
+    - UIImageColors
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UIImageColors: d2ef3b0877d203cbb06489eeb78ea8b7788caabe
 
-PODFILE CHECKSUM: bb957f7c6d10aa8f8b81696f60f0d41459bcefec
+PODFILE CHECKSUM: 999467d1bda9409160b1c7a0bfeeb156702e826b
 
-COCOAPODS: 1.11.0
+COCOAPODS: 1.11.2

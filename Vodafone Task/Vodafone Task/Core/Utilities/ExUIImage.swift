@@ -1,6 +1,6 @@
 //
 //  ExUIImage.swift
-//  Brightskies_Test
+
 //
 //  Created by Walid Elharby on 3/27/21.
 //

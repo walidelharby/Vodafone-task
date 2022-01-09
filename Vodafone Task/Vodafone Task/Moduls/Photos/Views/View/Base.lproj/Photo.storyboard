@@ -59,10 +59,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ8-MQ-nxV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="2" y="64" width="50" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WBy-Yh-Jm6"/>
+                                    <constraint firstAttribute="width" constant="50" id="qTM-ci-bLc"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.2.fill" catalog="system"/>
                                 <connections>
                                     <action selector="didPressClose:" destination="BXc-uL-b4z" eventType="touchUpInside" id="cad-6F-s0d"/>
                                 </connections>
@@ -79,14 +83,13 @@
                         <constraints>
                             <constraint firstItem="63P-rZ-qkh" firstAttribute="centerY" secondItem="VdO-04-yoe" secondAttribute="centerY" id="8fm-fm-OZc"/>
                             <constraint firstItem="63P-rZ-qkh" firstAttribute="centerX" secondItem="VdO-04-yoe" secondAttribute="centerX" id="8ki-BL-6Ab"/>
-                            <constraint firstItem="VdO-04-yoe" firstAttribute="bottom" secondItem="cZ8-MQ-nxV" secondAttribute="bottom" id="F8I-r7-0NO"/>
                             <constraint firstItem="63P-rZ-qkh" firstAttribute="width" secondItem="zR3-rM-yZF" secondAttribute="width" multiplier="0.9" id="KCy-DU-TU2"/>
-                            <constraint firstItem="cZ8-MQ-nxV" firstAttribute="leading" secondItem="VdO-04-yoe" secondAttribute="leading" id="kQa-6A-QEW"/>
-                            <constraint firstItem="cZ8-MQ-nxV" firstAttribute="top" secondItem="VdO-04-yoe" secondAttribute="top" id="tT5-9o-c8w"/>
-                            <constraint firstItem="VdO-04-yoe" firstAttribute="trailing" secondItem="cZ8-MQ-nxV" secondAttribute="trailing" id="uBq-RT-RT9"/>
+                            <constraint firstItem="cZ8-MQ-nxV" firstAttribute="leading" secondItem="VdO-04-yoe" secondAttribute="leading" constant="2" id="kQa-6A-QEW"/>
+                            <constraint firstItem="cZ8-MQ-nxV" firstAttribute="top" secondItem="VdO-04-yoe" secondAttribute="top" constant="20" id="tT5-9o-c8w"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="cZ8-MQ-nxV" id="heB-us-Ih6"/>
                         <outlet property="img" destination="63P-rZ-qkh" id="NJc-5h-3iK"/>
                     </connections>
                 </viewController>
@@ -96,6 +99,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

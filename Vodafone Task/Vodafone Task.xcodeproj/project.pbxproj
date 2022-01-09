@@ -11,6 +11,7 @@
 		4613B6ECB8D11C7E99842F2A /* Pods_Vodafone_Task_Vodafone_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022B1DB825E8D2BF5C726364 /* Pods_Vodafone_Task_Vodafone_TaskUITests.framework */; };
 		647781104A062696A738565D /* Pods_Vodafone_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ACBCB6264AE06C8C692A95 /* Pods_Vodafone_Task.framework */; };
 		D61DC132278AF6A400E0E5C8 /* ShowImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61DC131278AF6A400E0E5C8 /* ShowImageVC.swift */; };
+		D61DC134278B1BA700E0E5C8 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61DC133278B1BA700E0E5C8 /* Prefs.swift */; };
 		D6EE8ED42789BF8200B67AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE8ED32789BF8200B67AB0 /* AppDelegate.swift */; };
 		D6EE8ED62789BF8200B67AB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE8ED52789BF8200B67AB0 /* SceneDelegate.swift */; };
 		D6EE8EDB2789BF8200B67AB0 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EE8ED92789BF8200B67AB0 /* Photo.storyboard */; };
@@ -69,6 +70,7 @@
 		872C2CF288CD99F033CE4C52 /* Pods-Vodafone TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vodafone TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Vodafone TaskTests/Pods-Vodafone TaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		90ACBCB6264AE06C8C692A95 /* Pods_Vodafone_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vodafone_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61DC131278AF6A400E0E5C8 /* ShowImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageVC.swift; sourceTree = "<group>"; };
+		D61DC133278B1BA700E0E5C8 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		D6EE8ED02789BF8200B67AB0 /* Vodafone Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vodafone Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EE8ED32789BF8200B67AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EE8ED52789BF8200B67AB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				D6EE8F542789C6C600B67AB0 /* RoundedButton.swift */,
 				D6EE8F552789C6C600B67AB0 /* ExArray.swift */,
 				D6EE8F562789C6C600B67AB0 /* CircleImageView.swift */,
+				D61DC133278B1BA700E0E5C8 /* Prefs.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				D6EE8F492789C3A600B67AB0 /* PhotosModel.swift in Sources */,
 				D6EE8F5A2789C6C600B67AB0 /* ExString.swift in Sources */,
 				D6EE8F5C2789C6C600B67AB0 /* ExButton.swift in Sources */,
+				D61DC134278B1BA700E0E5C8 /* Prefs.swift in Sources */,
 				D6EE8F3A2789C32B00B67AB0 /* PhotosViewModel.swift in Sources */,
 				D6EE8F5B2789C6C600B67AB0 /* Validation.swift in Sources */,
 				D6EE8F5F2789C6C600B67AB0 /* CircleImageView.swift in Sources */,

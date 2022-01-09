@@ -72,6 +72,11 @@ class PhotosViewModel {
     func GetPhotos(page:Int) {
         switch networkStatus {
         case .offline:
+            if let offlinemodel = prefs.object(forKey: UD.PrefKeys.offlinemodel) as? [PhotosModel]{
+                self.model = offlinemodel
+                
+            }
+
             self.isDisconnected = true
             self.internetConnectionStatus?()
         case .online:
@@ -99,6 +104,7 @@ class PhotosViewModel {
                     
                 }else{
                         self.model = data
+                    self.saveModel()
                     self.didGetData?()
 
                     }
@@ -115,6 +121,11 @@ class PhotosViewModel {
 
 extension PhotosViewModel {
     // MARK: - PhotosData Func
+    func saveModel(){
+        if let offmodel = self.model {
+        prefs.set(offmodel, forKey: UD.PrefKeys.offlinemodel)
+        }
+    }
     func getCount() -> Int {
         return model?.count ?? 0
     }

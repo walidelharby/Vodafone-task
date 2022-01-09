@@ -7,7 +7,7 @@
 
 import Foundation
 // MARK: - PhotosModelElement
-struct PhotosModel: Codable {
+struct PhotosModel: Codable{
     let id, author: String?
     let width, height: Int?
     let url, downloadURL: String?

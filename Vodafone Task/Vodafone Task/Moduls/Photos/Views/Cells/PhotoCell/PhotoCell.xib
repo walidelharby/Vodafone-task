@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,14 +37,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsD-aJ-saq">
+                                <rect key="frame" x="0.0" y="0.0" width="134" height="137"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="oq4-L1-9Gn" secondAttribute="bottom" id="Alb-rD-v4U"/>
                             <constraint firstItem="CDA-o6-iAj" firstAttribute="leading" secondItem="frV-TF-OaK" secondAttribute="leading" id="F5P-fA-A0r"/>
+                            <constraint firstItem="GsD-aJ-saq" firstAttribute="top" secondItem="frV-TF-OaK" secondAttribute="top" id="GlY-bY-9vY"/>
                             <constraint firstAttribute="trailing" secondItem="oq4-L1-9Gn" secondAttribute="trailing" id="IRM-L1-Dmq"/>
+                            <constraint firstItem="GsD-aJ-saq" firstAttribute="leading" secondItem="frV-TF-OaK" secondAttribute="leading" id="L1X-j4-GxH"/>
                             <constraint firstItem="oq4-L1-9Gn" firstAttribute="leading" secondItem="frV-TF-OaK" secondAttribute="leading" id="P2T-dg-WVQ"/>
+                            <constraint firstAttribute="trailing" secondItem="GsD-aJ-saq" secondAttribute="trailing" id="bHL-VZ-EoA"/>
                             <constraint firstAttribute="trailing" secondItem="CDA-o6-iAj" secondAttribute="trailing" id="jS8-hJ-F45"/>
+                            <constraint firstAttribute="bottom" secondItem="GsD-aJ-saq" secondAttribute="bottom" id="nSN-PZ-3KI"/>
                             <constraint firstItem="CDA-o6-iAj" firstAttribute="top" secondItem="frV-TF-OaK" secondAttribute="top" id="opZ-Bl-IHw"/>
                             <constraint firstItem="oq4-L1-9Gn" firstAttribute="top" secondItem="CDA-o6-iAj" secondAttribute="bottom" constant="5" id="sLk-wa-cKc"/>
                         </constraints>
@@ -79,6 +89,7 @@
             <connections>
                 <outlet property="Img" destination="CDA-o6-iAj" id="dyt-6j-QOS"/>
                 <outlet property="authorName" destination="oq4-L1-9Gn" id="CQh-Yd-ylL"/>
+                <outlet property="selectedBT" destination="GsD-aJ-saq" id="HKf-H7-E4G"/>
             </connections>
             <point key="canvasLocation" x="-218.84057971014494" y="27.120535714285712"/>
         </collectionViewCell>
