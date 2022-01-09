@@ -55,7 +55,7 @@ enum APIRouter: URLRequestConvertible {
         case .getPhotos(page: let page):
             params = [
                 "page":page,
-                "limit":1000
+                "limit":20
             ]
             urlRequest = try URLEncoding.default.encode(urlRequest, with: params)
         }

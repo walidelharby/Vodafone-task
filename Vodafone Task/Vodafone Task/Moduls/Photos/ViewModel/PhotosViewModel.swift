@@ -87,10 +87,12 @@ class PhotosViewModel {
                     for item in data {
               
                     self.model?.append(item)
-                        self.didGetData?()
 
                  
-                    }}else{
+                    }
+                        self.didGetData?()
+
+                    }else{
                         self.islastpage = true
                     }
 

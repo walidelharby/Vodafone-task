@@ -10,6 +10,7 @@
 		358BEA3438B599980A3ED032 /* Pods_Vodafone_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690709A30C157A3E42443D57 /* Pods_Vodafone_TaskTests.framework */; };
 		4613B6ECB8D11C7E99842F2A /* Pods_Vodafone_Task_Vodafone_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022B1DB825E8D2BF5C726364 /* Pods_Vodafone_Task_Vodafone_TaskUITests.framework */; };
 		647781104A062696A738565D /* Pods_Vodafone_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ACBCB6264AE06C8C692A95 /* Pods_Vodafone_Task.framework */; };
+		D61DC132278AF6A400E0E5C8 /* ShowImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61DC131278AF6A400E0E5C8 /* ShowImageVC.swift */; };
 		D6EE8ED42789BF8200B67AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE8ED32789BF8200B67AB0 /* AppDelegate.swift */; };
 		D6EE8ED62789BF8200B67AB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE8ED52789BF8200B67AB0 /* SceneDelegate.swift */; };
 		D6EE8EDB2789BF8200B67AB0 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EE8ED92789BF8200B67AB0 /* Photo.storyboard */; };
@@ -67,6 +68,7 @@
 		690709A30C157A3E42443D57 /* Pods_Vodafone_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vodafone_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		872C2CF288CD99F033CE4C52 /* Pods-Vodafone TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vodafone TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Vodafone TaskTests/Pods-Vodafone TaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		90ACBCB6264AE06C8C692A95 /* Pods_Vodafone_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vodafone_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61DC131278AF6A400E0E5C8 /* ShowImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageVC.swift; sourceTree = "<group>"; };
 		D6EE8ED02789BF8200B67AB0 /* Vodafone Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vodafone Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EE8ED32789BF8200B67AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EE8ED52789BF8200B67AB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 			children = (
 				D6EE8ED92789BF8200B67AB0 /* Photo.storyboard */,
 				D6EE8F7D2789CE5200B67AB0 /* PhotosVC.swift */,
+				D61DC131278AF6A400E0E5C8 /* ShowImageVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				D6EE8ED42789BF8200B67AB0 /* AppDelegate.swift in Sources */,
 				D6EE8F762789CCB700B67AB0 /* DesignableImageView.swift in Sources */,
 				D6EE8F3F2789C35B00B67AB0 /* PhotosServiceProtocol.swift in Sources */,
+				D61DC132278AF6A400E0E5C8 /* ShowImageVC.swift in Sources */,
 				D6EE8F582789C6C600B67AB0 /* CardView.swift in Sources */,
 				D6EE8F7E2789CE5200B67AB0 /* PhotosVC.swift in Sources */,
 				D6EE8F0D2789C09500B67AB0 /* APIManager.swift in Sources */,
@@ -787,13 +791,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z6879RQMGW;
+				DEVELOPMENT_TEAM = GT9U5M7ZPH;
 				INFOPLIST_FILE = "$(SRCROOT)/Vodafone Task/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elharby.Vodafone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elharby.Vodafonee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -809,13 +813,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z6879RQMGW;
+				DEVELOPMENT_TEAM = GT9U5M7ZPH;
 				INFOPLIST_FILE = "$(SRCROOT)/Vodafone Task/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elharby.Vodafone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elharby.Vodafonee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
