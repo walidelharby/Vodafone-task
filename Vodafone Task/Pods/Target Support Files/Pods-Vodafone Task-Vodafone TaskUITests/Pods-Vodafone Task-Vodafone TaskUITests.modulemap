@@ -1,0 +1,6 @@
+framework module Pods_Vodafone_Task_Vodafone_TaskUITests {
+  umbrella header "Pods-Vodafone Task-Vodafone TaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

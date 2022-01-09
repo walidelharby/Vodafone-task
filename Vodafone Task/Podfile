@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Vodafone Task' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Alamofire'
+  pod 'SVProgressHUD'
+  pod 'Kingfisher'
+  # Pods for Vodafone Task
+
+  target 'Vodafone TaskTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Vodafone TaskUITests' do
+    # Pods for testing
+  end
+
+end
