@@ -7,38 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C04070B7-6FCC-4E7B-9BB1-F60EFAA36971"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Vodafone Task/Moduls/Photos/Views/View/PhotosVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "setupViewModel()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B464113C-1886-45CA-9E3A-F2E901C25515"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Vodafone Task/Moduls/Photos/Views/View/PhotosVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "setupViewModel()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "197D5FC0-4193-401E-8798-84D5531CD7DB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -71,7 +39,39 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "51B1725C-3509-4C60-AA93-1A1AD7BA7954"
+            uuid = "21204881-01D9-409D-8710-EF994268E4A7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vodafone Task/Moduls/Photos/ViewModel/PhotosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "GetPhotos(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8753415-E5E8-44A3-9083-BC0649129A7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vodafone Task/Moduls/Photos/Views/View/PhotosVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "selected(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A52A89F6-CD5B-421F-9F60-449F159CD501"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -82,54 +82,6 @@
             endingLineNumber = "126"
             landmarkName = "saveModel()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E62A68E-86EB-495E-8086-A6D205DB0047"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Vodafone Task/Moduls/Photos/ViewModel/PhotosViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "saveModel()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0E62A68E-86EB-495E-8086-A6D205DB0047 - 655d269996d9bcc9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Vodafone_Task.PhotosViewModel.saveModel() -&gt; ()"
-                  moduleName = "Vodafone Task"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/walidelharby/Desktop/untitled%20folder/VodafoneTask/Vodafone%20Task/Vodafone%20Task/Moduls/Photos/ViewModel/PhotosViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "0E62A68E-86EB-495E-8086-A6D205DB0047 - 655d269996d9bcc9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Vodafone_Task.PhotosViewModel.saveModel() -&gt; ()"
-                  moduleName = "Vodafone Task"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/walidelharby/Desktop/untitled%20folder/VodafoneTask/Vodafone%20Task/Vodafone%20Task/Moduls/Photos/ViewModel/PhotosViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "74">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

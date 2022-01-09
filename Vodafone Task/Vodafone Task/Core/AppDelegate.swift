@@ -11,10 +11,17 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let storyboard = UIStoryboard(name: "Photo", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "PhotoVC")
+      let nav = UINavigationController(rootViewController: vc)
+        window?.rootViewController = nav // Your initial view controller.
+        window?.makeKeyAndVisible()
+
         return true
     }
 

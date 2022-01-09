@@ -59,7 +59,6 @@ class PhotosVC: UIViewController {
         }
       
         self.viewModel.didGetData = {
-
             self.photoCollectionView.reloadData()
         }
 
@@ -76,11 +75,7 @@ extension PhotosVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let num = (viewModel.getCount()/5)
-        self.total = viewModel.getCount()
-       print("total\(total)")
-        return self.total
-            
+        return viewModel.getCount()
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -88,31 +83,28 @@ extension PhotosVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
 
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cell, for: indexPath) as! PhotoCell
-
-//        if indexPath.row == 0{
-//
-//
-//
-//            }else if indexPath.item % 6 == 0{
-//                cell.authorName.text = "ad Name"
-//                cell.Img.image = UIImage(named: "ad-placeholder")
-//
-//
-//
-//            }else{
-              
-        cell.Img.setImage(with: viewModel.getImageURL(index: indexPath.row))
-                cell.authorName.text = viewModel.getauthorName(index: indexPath.row)
+        cell.Img.image = UIImage()
+        if indexPath.row == 0{
+            }else if indexPath.item % 6 == 0{
+                cell.authorName.text = "ad Title"
+                cell.Img.image = UIImage(named: "ad-placeholder")
+                cell.selectedBT.isUserInteractionEnabled = false
+            }else{
+                cell.selectedBT.isUserInteractionEnabled = true
+                let index = viewModel.getCurrentindex(index: indexPath.row)
+                cell.Img.setImage(with: viewModel.getImageURL(index:index))
+                cell.authorName.text = viewModel.getauthorName(index:index)
         cell.selectedBT.addTarget(self, action: #selector(selected(sender:)), for: .touchUpInside)
-        cell.selectedBT.tag = indexPath.row
-                self.index = self.index + 1
+        cell.selectedBT.tag = viewModel.getCurrentindex(index: indexPath.row)
 
-//
-//            }
-        if indexPath.row == self.total-1{
+
+           }
+        if indexPath.row == viewModel.getCount()-1{
             if !viewModel.islastpage{
             page = page+1
-                viewModel.GetPhotos(page: page)}
+                viewModel.GetPhotos(page: page)
+
+            }
         }
         return cell
 
@@ -121,18 +113,23 @@ extension PhotosVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
    
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        if indexPath.row == 0{
-//               return CGSize(width: view.frame.width, height: 0.0)
-//        }else{
+        if indexPath.row == 0{
+            return CGSize(width: view.frame.width, height: 0.0)
+
+        }else if indexPath.item % 6 == 0 {
+            return CGSize(width: (self.view.frame.width) - 10, height: 200)
+
+        }else{
             return CGSize(width: (self.view.frame.width / 2) - 10, height: 200)
-   //        }
+         }
     }
     @objc func selected(sender: UIButton){
         
         if let vc = UIStoryboard.init(name: "Photo", bundle: Bundle.main).instantiateViewController(withIdentifier: "ShowImageVC") as? ShowImageVC{
-        vc.modalPresentationStyle = .fullScreen
+        vc.modalPresentationStyle = .overCurrentContext
             vc.url = self.viewModel.getImageURL(index: sender.tag)
-            self.present(vc, animated: true, completion: nil)
+            vc.Imagename = self.viewModel.getauthorName(index: sender.tag)
+            self.navigationController?.pushViewController(vc, animated: true)
             
         }
     }

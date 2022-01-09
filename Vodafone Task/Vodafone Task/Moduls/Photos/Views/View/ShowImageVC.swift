@@ -9,12 +9,13 @@ import UIKit
 import Kingfisher
 class ShowImageVC: UIViewController {
 
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var img: UIImageView!
     var url:String?
+     var Imagename:String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.backButton.setTitle("", for: .normal)
+        self.title = Imagename
         if let imgurl = self.url{
             self.img.setImage(with: imgurl)
             self.img.kf.setImage(with: URL(string: url ?? ""),completionHandler: {(RetrieveImageResult) in
@@ -30,9 +31,7 @@ class ShowImageVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
 
     }
-    @IBAction func didPressClose(_ sender: Any) {
-        self.dismiss(animated: false)
-    }
+  
     
    
 

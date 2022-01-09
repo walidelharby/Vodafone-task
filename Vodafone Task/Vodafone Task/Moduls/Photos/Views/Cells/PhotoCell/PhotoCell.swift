@@ -14,6 +14,7 @@ class PhotoCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectedBT.setTitle("", for: .normal)
+        self.Img.image = nil
         // Initialization code
     }
 

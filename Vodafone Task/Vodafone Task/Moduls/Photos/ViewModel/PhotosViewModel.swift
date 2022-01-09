@@ -104,7 +104,7 @@ class PhotosViewModel {
                     
                 }else{
                         self.model = data
-                    self.saveModel()
+                  //  self.saveModel()
                     self.didGetData?()
 
                     }
@@ -127,7 +127,18 @@ extension PhotosViewModel {
         }
     }
     func getCount() -> Int {
-        return model?.count ?? 0
+        if let count = model?.count{
+        let total = count+(count/5)+1
+            return total
+            
+        }else{
+                return 0
+            }
+      
+    }
+    func getCurrentindex(index:Int) -> Int {
+       return  index-(index/6)-1
+      
     }
     
     func getImageURL(index:Int) -> String {
